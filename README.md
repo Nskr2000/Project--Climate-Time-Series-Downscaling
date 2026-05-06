@@ -1,0 +1,6 @@
+##Climate Downscaling using Deep Learning
+About the Project
+This project implements statistical climate downscaling using deep learning. The objective is to reconstruct high-resolution atmospheric data from low-resolution input using two deep learning architectures — LSTM and Transformer. The models are trained to learn the spatial and temporal patterns in atmospheric data and predict fine-resolution outputs from coarse inputs. The Transformer model is found to outperform the LSTM in terms of prediction accuracy, temporal stability, and variance consistency.
+
+##Dataset
+The dataset used is the ERA5 Geopotential at 500 hPa, sourced from the ECMWF climate archive. It contains global atmospheric geopotential values at the 500 hPa pressure level stored in NetCDF format across a 5.625 degree spatial grid of 32 latitude by 64 longitude points. The raw variable z represents geopotential in m²/s², which is converted to geopotential height in meters by dividing by gravitational acceleration (9.81 m/s²). The dataset is provided as a ZIP archive containing multiple yearly .nc files that are merged along the time dimension during preprocessing.
